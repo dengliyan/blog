@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>列表</title>
+    <style type="text/css">
+        li{list-style: none;padding: 0;margin: 0}
+        h3{display: flex;justify-content:space-between;font-size: 12px;font-weight: normal}
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li th:each="posts:${posts_list}">
+            <h3><a th:href="'/posts/'+${posts.id}" th:text="${posts.title}" th:target="_blank"></a> <span th:text="${#dates.format(posts.createDate, 'yyyy-MM-dd HH:mm:ss')}"></span></h3>
+        </li>
+    </ul>
+</body>
+</html>

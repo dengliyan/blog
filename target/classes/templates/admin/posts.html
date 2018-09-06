@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>列表</title>
+    <style type="text/css">
+        li{list-style: none;padding: 0;margin: 0}
+        h3{display: flex;justify-content:space-between;font-size: 12px;font-weight: normal}
+
+    </style>
+</head>
+<body>
+<a href="/admin/posts/add/">添加</a>
+<ul>
+        <li th:each="posts:${posts_list}">
+            <h3><a th:href="'/posts/'+${posts.id}" th:text="${posts.title}" th:target="_blank"></a> <span th:text="${#dates.format(posts.createDate, 'yyyy-MM-dd HH:mm:ss')}"></span></h3>
+            <p><a href="/posts/delete/">删除</a></p>
+        </li>
+    </ul>
+</body>
+</html>

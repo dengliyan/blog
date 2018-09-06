@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>用户登录</title>
+    <script type="text/javascript" th:src="@{/js/jquery-1.8.3.min.js}" />
+</head>
+<body>
+    <p><input type="text" placeholder="用户名" /> </p>
+    <p><input type="password" placeholder="密码" /> </p>
+    <p><input type="button"  value="登录" /></p>
+    <script type="text/javascript">
+
+        //<![CDATA[
+            $("input[type='button']").click(function () {
+                var user=$("input[type='text']").val();
+                var password=$("input[type='password']").val();
+                $.ajax({url:'/login',data:{name:user,password:password},type:'post',dataType:'json'}).done(function (result) {
+                    if(result&&result.ret==0){
+                        alert('登录成功');
+                        window.location.href='/admin/'
+                    }else {
+                        alert('登录失败')
+                    }
+                });
+            });
+        //]]>
+    </script>
+</body>
+</html>

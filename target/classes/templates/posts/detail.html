@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title th:text="${posts.title}"></title>
+</head>
+<body>
+    <h3 th:text="${posts.title}"></h3>
+    <p th:text="${#dates.format(posts.createDate, 'yyyy-MM-dd HH:mm:ss')}"></p>
+    <article th:utext="${posts.htmlContent}"></article>
+</body>
+</html>
