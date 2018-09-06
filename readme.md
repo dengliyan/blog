@@ -1,10 +1,10 @@
-# blog
 spring boot mybatis redis jsr303 demo
 
-¼¼ÊõÕ»£ºspring boot
-       mybatis
-       redis
-       ×Ô¶¨Òåvalidation
-       È«¾ÖÒì³£´¦Àí£¬Ö§³ÖÒ³ÃæºÍjson
-       HandlerInterceptorµÇÂ¼ÑéÖ¤£¬Ê¹ÓÃ×Ô¶¨Òå×¢½â
-       HandlerMethodArgumentResolver£¬¶ÔÑéÖ¤µÄÓÃ»§Êı¾İ´«µİ
+æŠ€æœ¯æ ˆï¼š
+spring boot 
+mybatis 
+redis 
+è‡ªå®šä¹‰validation 
+å…¨å±€å¼‚å¸¸å¤„ç†ï¼Œæ”¯æŒé¡µé¢å’Œjson 
+HandlerInterceptorç™»å½•éªŒè¯ï¼Œä½¿ç”¨è‡ªå®šä¹‰æ³¨è§£ 
+HandlerMethodArgumentResolverï¼Œå¯¹éªŒè¯çš„ç”¨æˆ·æ•°æ®ä¼ é€’``
